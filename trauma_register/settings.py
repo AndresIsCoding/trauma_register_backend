@@ -60,14 +60,16 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",  # Cambia esto por la URL de tu frontend en producción
-    "http://127.0.0.1:8000", 
-    "http://132.30.100.70:8000",
-    #"http://RedcapPC.huv.gov.co:8000.com",
-    "http://trauma-app.com",
-    "http://localhost:3000",  # Si usas otro puerto en desarrollo
-    "http://localhost:5000",  # Si usas otro puerto en desarrollo
+    "http://127.0.0.1:8000",  
+    "http://localhost:3000",  # Cambia esto si necesitas usar otro puerto en desarrollo
+    "http://localhost:5000",  
     f"http://localhost:{variable_frontend_port}", # Para el puerto variable en Flutter
 ]
+
+# Permite añadir orígenes extra desde el .env
+extra_origins = os.getenv('CORS_EXTRA_ORIGINS')
+if extra_origins:
+    CORS_ALLOWED_ORIGINS.extend(extra_origins.split(','))
 
 CORS_ALLOW_CREDENTIALS = True
 
