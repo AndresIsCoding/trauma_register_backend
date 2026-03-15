@@ -11,7 +11,7 @@ application = get_wsgi_application()
 
 if __name__ == '__main__':
     # Puerto donde correrá la API (puedes cambiarlo si es necesario)
-    PORT = 8000
+    PORT = int(os.getenv('RUN_SERVER_PORT, 8000'))
     
     print(f"--- Iniciando servidor de producción (Waitress) ---")
     print(f"--- Escuchando en: http://0.0.0.0:{PORT} ---")
