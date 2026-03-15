@@ -1,3 +1,14 @@
+# Trauma Register Backend - Institutional Version
+
+> **Nota de Crédito y Atribución:**  
+> Este proyecto es un fork y una extensión del trabajo original desarrollado por **Diego2038**.  
+> - **Repositorio Original (Backend):** [Diego2038/trauma_register_backend](https://github.com/Diego2038/trauma_register_backend)  
+> - **Repositorio Original (Frontend):** [Diego2038/trauma_register_frontend](https://github.com/Diego2038/trauma_register_frontend)  
+>
+> Agradecemos a Diego2038 por sentar las bases de este sistema de gestión de datos para contextos de emergencias médicas. Esta versión incluye adaptaciones específicas para despliegue institucional y automatización de procesos.
+
+---
+
 # Trauma register backend
 
 ## Project Overview
